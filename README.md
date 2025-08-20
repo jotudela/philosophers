@@ -91,7 +91,7 @@ This simulates `4` philosophers with a `time_to_die` of 410 ms, a `time_to_eat` 
 
 My final grade :
 
-[](imgs/100_percent.png)
+![](imgs/100_percent.png)
 
 ![](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
