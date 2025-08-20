@@ -63,7 +63,11 @@ which `timestamp_in_ms` is the time in millisecond, and X the ID's of each philo
 The program implements the following core functionalities :
 | Functionality | Brief |
 |---------------|-------|
-| Thread Management | -Each philosopher is represented as a thread.<br>-Forks are protected using mutexes to prevent race conditions. |
+| Thread Management | - Each philosopher is represented as a thread.<br>- Forks are protected using mutexes to prevent race conditions. |
+| Philosopher Behavior | - Philosophers alternate between eating, thinking, and sleeping.<br>- To eat, a philosopher must acquire the fork on their left and right.<br>- Philosophers release forks after eating and then sleep. |
+| Synchronization | - Use mutexes to ensure forks are picked up and put down without conflicts.<br>- Avoid deadlocks by carefully managing the order in which forks are picked up. |
+| Termination Conditions | - A philosopher dies if they fail to eat within time_to_die milliseconds.<br>- The simulation ends if all philosophers eat the specified number of times (if provided). |
+
 
 
 
