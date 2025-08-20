@@ -10,7 +10,7 @@ This project focuses on understanding multithreading, mutexes, and synchronizati
 
 Clone my project :
 ```bash
-git clone git@github:jotudela/philosophers.git && cd philosophers
+git clone git@github:jotudela/philosophers.git && cd philosophers && cd philo
 ```
 
 > [!IMPORTANT]
@@ -68,12 +68,32 @@ The program implements the following core functionalities :
 | Synchronization | - Use mutexes to ensure forks are picked up and put down without conflicts.<br>- Avoid deadlocks by carefully managing the order in which forks are picked up. |
 | Termination Conditions | - A philosopher dies if they fail to eat within time_to_die milliseconds.<br>- The simulation ends if all philosophers eat the specified number of times (if provided). |
 
+## 🖥️ Example
 
+Here's a simple test :
+```bash
+./philo 4 410 200 200
+```
 
+output :
+```bash
+[1755681342203ms] 1 has taken a fork    🔱
+[1755681342203ms] 1 has taken a fork    🔱
+[1755681342203ms] 1 is eating           🍝
+[1755681342203ms] 3 has taken a fork    🔱
+[1755681342203ms] 3 has taken a fork    🔱
+[1755681342203ms] 3 is eating           🍝
+[1755681342403ms] 1 is sleeping         😴
+[1755681342403ms] 3 is sleeping         😴
+```
 
+This simulates `4` philosophers with a `time_to_die` of 410 ms, a `time_to_eat` of 200 ms, and a `time_to_sleep` of 200 ms.
 
+My final grade :
 
+[](imgs/100_percent.png)
 
+![](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
-
-
+## 🤝 Contribution
+Contributions are open, make a pull request or open an issue 🚀
